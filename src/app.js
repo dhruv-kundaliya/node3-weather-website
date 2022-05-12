@@ -6,6 +6,7 @@ const temperature = require('./utils/temp')
 const { send } = require('process')
 
 const app = express()
+const port = process.env.PORT || 3000
 
 //Define paths for express config
 const try_public_path = path.join(__dirname , '../try_public')
@@ -97,6 +98,6 @@ app.get('/weather',(req, res)=>{
  
 })
 
-app.listen(3000,()=>{
-    console.log('server started on 3000')
+app.listen(port,()=>{
+    console.log('server started on' + port)
 })
