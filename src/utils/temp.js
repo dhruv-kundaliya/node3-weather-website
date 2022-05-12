@@ -9,6 +9,7 @@ function temperature(address,callback){
         }else if(response.body.error){
             callback('unable to find location',undefined)
         }else{
+            console.log(response.body.current.temperature)
             callback('temprature retrive sucuessfuly',`it is currently ${response.body.current.temperature} degree it feels like ${response.body.current.feelslike} degree`)
         }
     })
