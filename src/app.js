@@ -97,22 +97,6 @@ app.get('/weather',(req, res)=>{
  
 })
 
-
-
-/*app.get('*',(req,res)=>{
-    res.render('404',{
-        title : '404',
-        name : 'Dhruv Kundaliya',
-        errormessage : 'page not found'
-    })
-})
-app.get('/help/*',(req,res)=>{
-    res.render('404',{
-        title : '404',
-        name : 'Dhruv Kundaliya',
-        errormessage : 'help artical not found'
-    })
-})*/
 app.listen(3000,()=>{
     console.log('server started on 3000')
 })
